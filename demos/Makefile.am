@@ -1,6 +1,6 @@
 include $(top_srcdir)/Makefile.decl
 
-INCLUDES = $(GTK_CFLAGS)
+AM_CPPFLAGS = $(GTK_CFLAGS)
 LDADD = $(GTK_LIBS)
 
 TEST_PROGS+=buttonbox

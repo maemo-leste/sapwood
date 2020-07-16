@@ -1,6 +1,9 @@
-AC_INIT([server/sapwood-server.c])
+AC_INIT([sapwood], [3.1.1])
+AC_CONFIG_SRCDIR([server/sapwood-server.c])
 AC_CONFIG_HEADERS([config.h])
-AM_INIT_AUTOMAKE(sapwood, 3.1.1)
+AM_INIT_AUTOMAKE
+
+AC_CONFIG_MACRO_DIRS([m4])
 
 dnl Initialize maintainer mode
 AM_MAINTAINER_MODE

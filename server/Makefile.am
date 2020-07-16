@@ -1,6 +1,6 @@
 include $(top_srcdir)/Makefile.decl
 
-INCLUDES = \
+AM_CPPFLAGS = \
     $(GDK_CFLAGS) \
     -I$(top_srcdir)/protocol \
     -DSAPWOOD_SERVER=\"$(daemondir)/sapwood-server\" \

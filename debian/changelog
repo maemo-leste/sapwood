@@ -1,3 +1,11 @@
+sapwood (3.1.2-1) unstable; urgency=medium
+
+  * Update Makefile.decl from our distribution of gtk2.
+  * Clean up autoconf and automake of warnings.
+  * Port to debhelper 10.
+
+ -- Ivan J. <parazyd@dyne.org>  Thu, 16 Jul 2020 20:05:34 +0200
+
 sapwood (3.1.1-11) unstable; urgency=low
 
   * build-depend on maemo-system-services-dev instead of upstart-dev

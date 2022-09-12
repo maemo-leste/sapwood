@@ -546,7 +546,9 @@ sapwood_pixmap_render_rects (SapwoodPixmap *self,
       tmp_mask = gdk_pixmap_new (draw, tmp_width, tmp_height, 1);
 
       mask_cr = gdk_cairo_create (tmp_mask);
-      cairo_set_operator (mask_cr, CAIRO_OPERATOR_CLEAR);
+
+      cairo_set_source_rgba (mask_cr, 0., 0., 0., 1.);
+      cairo_set_operator (mask_cr, CAIRO_OPERATOR_SOURCE);
       cairo_paint (mask_cr);
     }
 
